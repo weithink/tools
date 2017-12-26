@@ -1,0 +1,6 @@
+ext {
+    frescoVersion = '1.2.0'
+    photodraweeview = '1.1.2'
+    gson = '2.0.2'
+    fastjson = '1.2.8'
+}

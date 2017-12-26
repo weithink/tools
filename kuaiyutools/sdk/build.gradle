@@ -1,0 +1,45 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "26.0.2"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+        }
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            minifyEnabled false
+            //暂时不用混淆，用加固即可
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    testCompile 'junit:junit:4.12'
+    //-------------------fresco--------------------------------
+    compile 'com.facebook.fresco:fresco:' + rootProject.ext.frescoVersion
+    compile 'com.facebook.fresco:animated-base-support:' + rootProject.ext.frescoVersion
+    compile 'com.facebook.fresco:animated-gif:' + rootProject.ext.frescoVersion
+    compile 'com.facebook.fresco:webpsupport:' + rootProject.ext.frescoVersion
+    compile 'com.facebook.fresco:animated-webp:' + rootProject.ext.frescoVersion
+    compile 'me.relex:photodraweeview:' + rootProject.ext.photodraweeview
+    compile 'com.squareup.retrofit2:converter-gson:' + rootProject.ext.gson
+    compile 'com.alibaba:fastjson:'+ rootProject.ext.fastjson
+}

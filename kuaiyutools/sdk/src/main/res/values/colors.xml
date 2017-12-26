@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--新颜色 如以上色值与这里的色值一样，尽量用新取名的
+      不透明度对应的值
+      100% — FF
+      95% — F2
+      90% — E6
+      85% — D9
+      80% — CC
+      75% — BF
+      70% — B3
+      65% — A6
+      60% — 99
+      55% — 8C
+      50% — 80
+      45% — 73
+      40% — 66
+      35% — 59
+      30% — 4D
+      25% — 40
+      20% — 33
+      15% — 26
+      10% — 1A
+      5% — 0D
+      0% — 00
+  -->
+    <!--字体颜色-->
+    <color name="white">#ffffff</color>
+    <color name="text_color_grey60">#99000000</color><!--60不透明度-->
+    <color name="text_color_black60">#99000000</color><!--60不透明度-->
+    <color name="text_color_black40">#66000000</color><!--40不透明度-->
+    <color name="text_color_black30">#4D000000</color><!--30不透明度-->
+    <color name="text_color_black15">#26000000</color><!--15不透明度-->
+    <color name="text_color_black10">#1A000000</color><!--10不透明度-->
+    <color name="text_color_light_grey">#4c000000</color><!--30不透明度-->
+    <color name="text_has_alpha">#FF1E46</color>
+    <color name="color_black5">#0D000000</color><!--10不透明度-->
+
+    <color name="text_color_red">#F76B1C</color>
+    <color name="color_red_press">#f2430b</color>
+    <color name="background0">#F2F2F2</color>
+    <color name="background1">#FFFFFF</color>
+    <color name="background2">#22222c</color>
+    <color name="background3">#F9F9F9</color>
+    <color name="background4">#eeeeee</color>
+    <color name="background5">#10000000</color><!--5不透明度,这个不太准确，先用着-->
+    <color name="background6">#D8D8D8</color>
+    <color name="background7">#E6FFFFFF</color><!--90不透明度-->
+
+    <color name="background0_alpha">#66121218</color>
+
+    <color name="background_white30">#4cFFFFFF</color><!--30不透明度-->
+    <color name="background_white60">#99FFFFFF</color><!--60不透明度-->
+    <color name="background_white80">#d0FFFFFF</color><!--80不透明度-->
+
+
+
+</resources>
